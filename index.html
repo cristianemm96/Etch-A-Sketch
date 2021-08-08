@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch a Sketch</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+  <div id="principal-container">
+    <div id="buttons">
+      <h3 id="set-mode">2-Set Mode</h3>
+      <button id="colormode-button"> Color Mode </button>
+      <button id="rainbow-button"> Rainbow Mode</button>
+      <button id="clean-button"> Clean </button>
+      <input type="color" id="palette-color" value="black">
+    </div>
+  
+    <div id="board-container">
+      <div id="container">
+      </div>
+    </div>
+
+    <div id="size-buttons">
+      <h3 id="set-size">1-Set size</h3>
+      <label><input type="radio" value="2" name="size" class="size" id="two"required> 2x2</label>
+      <label><input type="radio" value="4" name="size" class="size" id="four"required> 4x4</label>
+      <label><input type="radio" value="8" name="size" class="size" id="eight"required> 8x8</label>
+      <label><input type="radio" value="16" name="size" class="size" id="sixteen"required> 16x16</label>
+      <label><input type="radio" value="32" name="size" class="size" id="thirty"required> 32x32</label>
+      <label><input type="radio" value="64" name="size" class="size" id="sixty"required> 64x64</label>
+      <label><input type="radio" value="128" name="size" class="size" id="hundred"required> 128x128</label>
+    </div>
+  </div>
+  <footer><label>Cristian Mariño for the odin project &#169</label> </footer>
+
+  <script src="./javascript/board.js"></script>
+  <script src="./javascript/color-mode.js"></script>
+  <script src="./javascript/rainbowMode.js"></script>   
+  <script src="./javascript/cleanButton.js"></script> 
+
+</body>
+</html>
